@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-ink-800 antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    @apply bg-brand-200 text-brand-900;
+  }
+}
+
+@layer components {
+  .container-px {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold tracking-wide transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 focus-visible:ring-offset-2;
+  }
+  .btn-primary {
+    @apply btn bg-brand-600 text-white shadow-soft hover:bg-brand-700 hover:-translate-y-0.5 active:translate-y-0;
+  }
+  .btn-ghost {
+    @apply btn bg-white/10 text-white backdrop-blur hover:bg-white/20 ring-1 ring-white/25;
+  }
+  .btn-outline {
+    @apply btn bg-transparent text-brand-700 ring-1 ring-brand-200 hover:bg-brand-50 hover:-translate-y-0.5;
+  }
+  .card {
+    @apply rounded-3xl bg-white shadow-soft ring-1 ring-ink-100;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-700 ring-1 ring-brand-100;
+  }
+  .section-title {
+    @apply font-display text-3xl font-semibold leading-tight text-ink-900 sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1];
+  }
+  .link-underline {
+    @apply relative after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full;
+  }
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(15, 77, 68, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 77, 68, 0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+.bg-hero-glow {
+  background:
+    radial-gradient(60% 50% at 15% 10%, rgba(31, 154, 128, 0.18), transparent 60%),
+    radial-gradient(50% 45% at 90% 20%, rgba(212, 164, 63, 0.14), transparent 60%),
+    radial-gradient(40% 40% at 70% 90%, rgba(31, 154, 128, 0.12), transparent 60%);
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, #137a66 0%, #1f9a80 25%, #d6a43f 50%, #1f9a80 75%, #137a66 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s linear infinite;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f6f7f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #b0b9c8;
+  border-radius: 9999px;
+  border: 2px solid #f6f7f9;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8593a8;
+}
