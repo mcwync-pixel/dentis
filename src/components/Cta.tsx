@@ -29,15 +29,15 @@ export default function Cta({ onBook }: Props) {
                 <button onClick={onBook} className="btn bg-white text-brand-700 hover:bg-brand-50 hover:-translate-y-0.5">
                   <CalendarCheck className="h-5 w-5" /> Book Your Appointment
                 </button>
-                <a href="tel:0279050814" className="btn-ghost">
-                  <Phone className="h-4 w-4" /> (02) 7905 0814
+                <a href="tel:12345678" className="btn-ghost">
+                  <Phone className="h-4 w-4" /> (02) 1234 5678
                 </a>
               </div>
             </div>
 
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-2">
               <ActionCard icon={<CalendarCheck className="h-5 w-5" />} label="Appointment" onClick={onBook} />
-              <ActionCard icon={<Phone className="h-5 w-5" />} label="Call us" href="tel:0279050814" />
+              <ActionCard icon={<Phone className="h-5 w-5" />} label="Call us" href="tel:12345678" />
               <ActionCard
                 icon={<MapPin className="h-5 w-5" />}
                 label="Directions"

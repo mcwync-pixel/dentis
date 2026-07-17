@@ -66,8 +66,8 @@ export default function Hero({ onBook }: Props) {
               icon={<Phone className="h-6 w-6" />}
               title="Call Now"
               subtitle={
-                <a href="tel:0279050814" className="font-semibold text-ink-900">
-                  (02) 7905 0814
+                <a href="tel:12345678" className="font-semibold text-ink-900">
+                  (02) 1234 5678
                 </a>
               }
             />

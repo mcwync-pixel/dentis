@@ -14,8 +14,8 @@ export default function Faq() {
             <h2 className="mt-4 section-title">Questions our patients ask</h2>
             <p className="mt-4 text-ink-600">
               Can&apos;t find what you&apos;re looking for? Our front desk is happy to help — call{' '}
-              <a href="tel:0279050814" className="font-semibold text-brand-700 link-underline">
-                (02) 7905 0814
+              <a href="tel:12345678" className="font-semibold text-brand-700 link-underline">
+                (02) 1234 5678
               </a>
               .
             </p>

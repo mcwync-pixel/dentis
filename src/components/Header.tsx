@@ -38,8 +38,8 @@ export default function Header({ onBook }: Props) {
               Mon–Fri 9:00am – 6:30pm · Sat 9:00am – 5:00pm
             </span>
           </div>
-          <a href="tel:0279050814" className="inline-flex items-center gap-2 font-semibold text-white link-underline">
-            <Phone className="h-3.5 w-3.5" /> (02) 7905 0814
+          <a href="tel:12345678" className="inline-flex items-center gap-2 font-semibold text-white link-underline">
+            <Phone className="h-3.5 w-3.5" /> (02) 1234 5678
           </a>
         </div>
       </div>
@@ -79,7 +79,7 @@ export default function Header({ onBook }: Props) {
           </nav>
 
           <div className="hidden items-center gap-3 lg:flex">
-            <a href="tel:0279050814" className="btn-outline">
+            <a href="tel:12345678" className="btn-outline">
               <Phone className="h-4 w-4" /> Call
             </a>
             <button onClick={onBook} className="btn-primary">
@@ -111,7 +111,7 @@ export default function Header({ onBook }: Props) {
                   </a>
                 ))}
                 <div className="mt-2 grid grid-cols-2 gap-2 p-2">
-                  <a href="tel:0279050814" className="btn-outline w-full">
+                  <a href="tel:12345678" className="btn-outline w-full">
                     <Phone className="h-4 w-4" /> Call
                   </a>
                   <button
